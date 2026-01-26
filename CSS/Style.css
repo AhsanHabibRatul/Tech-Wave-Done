@@ -194,7 +194,6 @@ padding: 40px;
     padding: 100px 150px;
     min-height: 600px;
 
-    gap: 30px;
     
 
 }
@@ -228,6 +227,22 @@ border-radius: 0px 0px 24px 24px;
 }
 .br{
     border-radius:24px 24px 0px 0px;
+}
+/* host section*/
+.main-div{
+    background-color: #351165;
+    margin-left: 100px;
+    margin-right: 150px;
+    margin-top: 40px;
+    border-radius: 20px;
+display: flex;
+
+
+}
+.socials{
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
 }
 
 
