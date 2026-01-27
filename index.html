@@ -6,13 +6,14 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Tech Wave</title>
     <link rel="stylesheet" href="CSS/Style.css">
+    <link rel="stylesheet" href="CSS/Responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <header>
-<nav class="bg-[#1A0B2E] pt-4 pl-25 pr-25 h-20 items-center ">
+<nav class="bg-[#190c2a] pt-4 pl-25 pr-25 h-20 items-center ">
     <div class=" flex justify-between">
-    <h2 class="text-4xl text-white font-bold ">
+    <h2 class="text-4xl text-white font-bold header-h1 ">
         Tech<Span class=" bg-linear-to-r 
     from-yellow-400 
     via-pink-500 
@@ -20,7 +21,7 @@
     bg-clip-text 
     text-transparent">Wave</Span>
     </h2>
-    <div class="text-white text-sm pt-2">
+    <div class="text-white text-sm pt-2 navbar">
         <ul class="flex gap-7">
             <li><a href="">About</a></li>
             <li><a href="">Episodes</a></li>
@@ -32,22 +33,24 @@
   via-pink-500 
   to-purple-600
   rounded-3xl px-7 py-2 nav-btn"><a href="">Subscribe <i class="fa-solid fa-arrow-right"></i></a></Button>
+  <span class="hamburger"><i class="fa-solid fa-bars text-white"></i></span>
+
 </div>
 
 </nav>
 </header>
 
 <!--Hero banner-->
-<section class="banner-section">
-<div>
+<section class="banner">
+<div class="banner-section">
     <div class="rounded-mic-parent">
         <img src="assets/hero-circle.png" alt="" class="rounded">
         <img src="assets/microphone.png" alt="" class="mic">
         <span>New</span>
     </div>
-    <div class="mt-25 mb-35  ">
+    <div class=" re-banner mt-25 ">
     <h1>TechWave</h1>
-    <p>Your daily dose of tech insights,productivity hacks,and personal growth</p>
+    <p>Your daily dose of tech insights,productivity hacks, and personal growth</p>
     <div>
     <button class="btn"><i class="fa-brands fa-spotify"></i>Listen on spotify</button>
 
@@ -131,7 +134,7 @@ and share stories of personal growth from industry leaders.
 <h3>
     Featured Episodes
 </h3>
-<main class="flex gap-10 mt-10 ">
+<main class="featured-card">
 <div>
 <iframe class="br" width="350px" height="200px" src="https://www.youtube.com/embed/H5zSQ9M_s2Y?si=osUgwFiUxUJBZfQj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -159,14 +162,16 @@ and share stories of personal growth from industry leaders.
 </div>
 </div>
 </main>
+</section>
 
 <!--Host Section-->
-<h3 class="mt-30">Meet The Host</h3>
-<div class="main-div">
-    <img class="p-4" src="assets/host.png" alt="">
+<section class="host-section">
+<h3>Meet The Host</h3>
+<div class="host-div">
+    <img  src="assets/host.png" alt="">
 
-<div class="p-"><h1 class="text-4xl text-white font-semibold mb-4">Alex Kumar</h1>
-<p class="mb-3">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
+<div class="host-div-2"><h1 class="text-4xl text-white font-semibold mb-4 mt-3">Alex Kumar</h1>
+<p class=" text-white text-sm  mb-3">Tech entrepreneur, productivity expert, and lifelong learner. Alex has been in the tech industry for over 10 years, working with startups and Fortune 500 companies. Through TechWave, Alex shares insights from industry leaders and practical advice for anyone looking to grow in tech.
 </p> 
 <div class="socials">
     <div class="circle"><img  src="assets/linkedin.png" alt=""></div>
@@ -180,8 +185,8 @@ and share stories of personal growth from industry leaders.
 
 <!--Last section:footer-->
 <footer class="footer-section">
-    <div class="pt-25">
-<h2 class="text-8xl text-white font-bold ">
+    <div class="last-h2">
+<h2 class="text-7xl text-white font-bold ">
         Tech<Span class=" bg-linear-to-r 
     from-yellow-400 
     via-pink-500 
@@ -190,18 +195,16 @@ and share stories of personal growth from industry leaders.
     text-transparent">Wave</Span>
     </h2>
 </div>
-    <main class="text-white pt-5 flex text-center gap-20 text-sm justify-center">
-    
-        <button class="text-white"><i class="fa-brands fa-twitter"></i>Twitter</button>
-    
-<button class=""><i class="fa-brands fa-spotify"></i>spotify</button>
+<div class="social-2 ">
+    <a href=""><i class="fa-brands fa-spotify"></i>Spotify</a>
 
-<button><i class="fa-solid fa-podcast"></i>Podcast</button>
+    <a href=""><i class="fa-solid fa-podcast"></i>Apple Podcasts</a> <br>
+    <a href=""><i class="fa-brands fa-youtube"></i>YouTube</a>
+    <a href=""><i class="fa-brands fa-twitter"></i>Twitter</a>
 
-<button class=""><i class="fa-brands fa-youtube"></i>YouTube</button>
-</main>
+</div>
 
-<p class="text-white pt-10"> © 2026 TechWave Podcast. All rights reserved. </p>
+<p> © 2026 TechWave Podcast. All rights reserved. </p>
 
 
 </footer>
