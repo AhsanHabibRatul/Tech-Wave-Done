@@ -55,6 +55,8 @@ min-height:466px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 300px;
+    padding-bottom: 100px;
 
 }
 
@@ -68,7 +70,7 @@ min-height:466px;
     font-size: 16px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
-    margin-bottom: 20px;
+margin-top: 20px;
 }
 .btn{
     padding: 10px 25px;
@@ -92,28 +94,34 @@ color: white;
     cursor: pointer;
 }
 /*Rounded part*/
-.rounded-mic-parent{
-    position: relative;
-}
-.banner-section .rounded{
-    width: 280px;
-    height: auto;
-    position: relative;
-    left: 500px;
-    top: 60px;
-
-    
+.banner-section{
+    padding-top: 50px;
+    width: 100%;
 
 }
-.banner-section .mic{
-    width: 95px;
+.banner-section .rounded-mic-parent{
+    position: relative;
+}
+.banner-section .rounded-mic-parent .rounded-shape{
+    width: 300px;
     height: auto;
     position: absolute;
     left: 50%;
-    top: 70%;
-    transform: translate(-50%, -50%);
+    top: 80%;
+     transform: translate(-50%, 4%);
+
 }
-.banner-section span{
+.banner-section .rounded-mic-parent .mic{
+    width: 90px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 50%);
+}
+.banner-section .rounded-mic-parent span{
+
+
     background-color: #00FF88;
     padding: 6px 18px ;
     border-radius: 1000px;
@@ -121,8 +129,9 @@ color: white;
     font-weight: 500;
     display: inline-block;
     position: absolute;
-    left: 710px;
-    top: 70px;
+    left: 70%;
+    top: 20px;
+
     box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
 }
 
@@ -206,12 +215,15 @@ grid-column: span 3;}
     background-color: #1A0B2E;
     padding: 100px 80px;
     min-height: 600px;
+
 }
 
 .featured-card{
     display: flex;
     gap: 30px;
     margin-top: 25px;
+
+
 }
 .featured-section h3{
     color: #ffffff;
@@ -271,19 +283,38 @@ text-align: center;
     border-radius: 20px;
     padding: 40px;
     gap: 12px;
-display: flex;
+    display: flex;}
+
+
+
+
+.host-div img{
+height:auto;
+
+}
+
+
+
+
+.host-div-2 p{
+    color: hsl(0, 1%, 37%);
+    font-size: 16px;
+    padding-bottom: 20px;
 
 
 }
+
 .socials{
     display: flex;
     gap: 10px;
     cursor: pointer;
+    padding-bottom: 0px;
+    
 
 }
 .circle{
 border: 2px solid #504d01;
-padding: 12px;
+padding: 8px;
 border-radius: 70%;
 
 }
