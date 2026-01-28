@@ -93,7 +93,7 @@ font-size: 38px;
 }
 
 .host-div{
-width: 400px;
+width: 320px;
 height: auto;
 display: flex;
 flex-direction: column;
@@ -259,7 +259,10 @@ border-radius: 70%;
     position: absolute;
     left: 55%;
     top: 20px;}
-    
+
+    .nav-btn{
+        display: none;
+    }
     
 }
 
